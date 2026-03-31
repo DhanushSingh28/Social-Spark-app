@@ -65,14 +65,14 @@ class MainActivity : AppCompatActivity() {
                         suggestion = "Leave a thoughtful comment on a friend's post."
                 }
                 val sparkTimes = listOf("Morning", "Afternoon", "Night")
-                     // Specific feedback for empty input
+                // Specific feedback for empty input
 
-                    if (input.isEmpty()) {
+                if (input.isEmpty()) {
                         suggestion = "Input is empty, please provide a time."
-                    }
-                    // Constructive error message for invalid text
-                     if (input !in sparkTimes) {
-                       println("Hmm, '$input' doesn't seem to match a spark time. Try typing 'Morning', 'Afternoon', or 'Night' to find your next connection!")
+                }
+                // Constructive error message for invalid text
+                if (input !in sparkTimes) {
+                    println("Hmm, '$input' doesn't seem to match a spark time. Try typing 'Morning', 'Afternoon', or 'Night' to find your next connection!")
             }
 
         tvSuggestion.text = suggestion
