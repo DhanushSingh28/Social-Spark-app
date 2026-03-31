@@ -2,6 +2,7 @@ package com.example.socialsparkapp
 
 import android.graphics.Color
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
@@ -21,14 +22,17 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
 
             WindowInsetsCompat.CONSUMED
-
+            // --- Assuming this code is within onCreate ---
+            // [1] Using standard Android findViewById to reference UI elements from XML
             val etInput = findViewById<EditText>(R.id.etTimeInput)
             val btnSpark = findViewById<Button>(R.id.btnSpark)
             val btnReset = findViewById<Button>(R.id.btnReset)
             val tvSuggestion = findViewById<TextView>(R.id.tvResult)
 
-            btnSpark.setOnClickListener {
+            Log.d("SparkApp", "UI Initialized")
 
+            btnSpark.setOnClickListener {
+                // Add Reset background tint So the visibility of view state was clear
                 tvSuggestion.backgroundTintList = null
                 tvSuggestion .setBackgroundColor(Color.BLACK)
                 tvSuggestion.visibility = View.VISIBLE
@@ -56,14 +60,16 @@ class MainActivity : AppCompatActivity() {
                     "Hmm, '$input' doesn't seem to match a spark time. Try typing 'Morning', 'Afternoon', or 'Night' to find your next connection!"
                 }
                 tvSuggestion.text = suggestion
-
+                Log.d("SparkApp", "Suggestion shown: $suggestion")
 
             }
             btnReset.setOnClickListener {
+                // Reset view state
                 tvSuggestion.backgroundTintList = null
                 tvSuggestion.setBackgroundColor(Color.TRANSPARENT)
-                etInput.text.clear()
-                tvSuggestion.text = ""
+                etInput.text.clear() // Clear text
+                tvSuggestion.text = ""// Clear input field
+                Log.d("SparkApp", "UI Reset")
             }
             insets
         }
