@@ -30,6 +30,8 @@ Kotlin
 *2)Open in Android Studio
 *3)Sync Project With gradle FILes
 
+https://youtu.be/7GTwuhApAoU
+
 <img width="1360" height="768" alt="Screenshot (1)" src="https://github.com/user-attachments/assets/93fed086-3ca4-42ad-ab63-83d8aea38576" />
 
 <img width="1360" height="768" alt="Screenshot (5)" src="https://github.com/user-attachments/assets/0c9d410c-e34d-4dc7-bbd7-cf136d31f1cb" />
