@@ -46,24 +46,24 @@ class MainActivity : AppCompatActivity() {
 
                 // Using if chains to match the specific "spark" times
                 var suggestion = "No suggestion for this time."
-                    if (input == "morning") {
+                if (input == "morning") {
                         suggestion = "Send a Good morning text to a family member."
-                    }
-                    if (input == "mid-morning") {
+                }
+                if (input == "mid-morning") {
                         suggestion = "Reach out to a colleague with a quick Thank you."
-                    }
-                    if (input == "afternoon") {
+                }
+                if (input == "afternoon") {
                         suggestion = "Share a funny meme or interesting link with a friend."
-                    }
-                    if (input == "afternoon snack time") {
+                }
+                if (input == "afternoon snack time") {
                         suggestion = "Send a quick thinking of you message."
-                    }
-                    if (input == "dinner") {
+                }
+                if (input == "dinner") {
                         suggestion = "Call a friend or relative for a 5-minute catch-up."
-                    }
-                    if (input == "after dinner" || input == "night") {
+                }
+                if (input == "after dinner" || input == "night") {
                         suggestion = "Leave a thoughtful comment on a friend's post."
-                    }
+                }
                 val sparkTimes = listOf("Morning", "Afternoon", "Night")
                      // Specific feedback for empty input
 
