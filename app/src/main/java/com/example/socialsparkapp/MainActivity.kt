@@ -31,9 +31,9 @@ class MainActivity : AppCompatActivity() {
 
             Log.d("SparkApp", "UI Initialized")
             /**
-             * Adapted from [Google.Gemini]
+             * Adapted from (Google.Gemini)
              * Prompt: "Generate a Kotlin if-else statement for an Android app. Based on a val input string, set a val suggestion for a social action"
-             * Modified by: [Dhanush]
+             * Modified by: (Dhanush)
              * Description: Added error handling and renamed variables and strings for if statements instead of if else.
              */
             btnSpark.setOnClickListener {
@@ -66,7 +66,7 @@ class MainActivity : AppCompatActivity() {
                     }
                 val sparkTimes = listOf("Morning", "Afternoon", "Night")
                      // Specific feedback for empty input
-                     "Input is empty, please provide a time."
+
                     if (input.isEmpty()) {
                         suggestion = "Input is empty, please provide a time."
                     }
