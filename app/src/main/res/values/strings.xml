@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Social Spark app</string>
+    <string name="get_spark">Get Spark</string>
+    <string name="time_of_day">Time Of Day</string>
+    <string name="Time_of_day">Time of Day</string>
+    <string name="reset">Reset</string>
+    <string name="Enter_time_of_day">Enter time of day</string>
 </resources>
